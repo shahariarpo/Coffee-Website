@@ -41,20 +41,6 @@
 }
 
 /* Styling for whole site */
-
-header{
-    background-color: var(--primary-color);
-}
-
-.navbar .nav-logo .logo-text{
-    color: var(--white-color);
-}
-
-.navbar .nav-menu .nav-link{
-    color: var(--white-color);
-
-}
-
 ul{
     list-style: none;
 }
@@ -72,4 +58,47 @@ button{
 img{
     width: 100%;
 
+}
+
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+/* Navbar Styling */
+
+header{
+    background-color: var(--primary-color);
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-logo .logo-text{
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu .nav-link{
+    color: var(--white-color);
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-m);
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
