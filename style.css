@@ -333,11 +333,6 @@ header .navbar{
         margin-top: 20px;
     }
 
-    .about-section .about-image-wrapper .about-image{
-        width: 300px;
-        height: 300px;
-    }
-
     /* About Us Section */
 
     .about-section .section-content{
@@ -346,5 +341,10 @@ header .navbar{
 
     .about-section .about-details{
         max-width: 85%;
+    }
+
+    .about-section .about-image-wrapper .about-image{
+        width: 300px;
+        height: 300px;
     }
 } 
