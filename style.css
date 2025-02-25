@@ -404,9 +404,7 @@ header .navbar{
     /* Menu section */
 
     .menu-section .menu-list{
-        display: flex;
         gap: 30;
-        flex-direction: column;
     }
 
     .menu-section .menu-list .menu-item{
@@ -414,7 +412,21 @@ header .navbar{
     }
 
     .menu-section .menu-list .menu-item .menu-image{
-        width: 100%;
-        aspect-ratio: 1;
+        max-width: 200px;
     }
-} 
+}
+
+@media screen and (max-width: 640px){
+    /* Menu Section */
+    .menu-section .menu-list{
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item{
+        width:100%;
+    }
+
+    .menu-section .menu-list .menu-item .menu-image{
+        max-width: 200px;
+    }
+}
