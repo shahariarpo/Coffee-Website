@@ -69,7 +69,7 @@ img{
 .section-title{
     text-align: center;
     padding: 60px 0 100px;
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xxxl);
 }
 
 .section-title::after{
@@ -210,10 +210,14 @@ header .navbar{
 }
 
 .about-section .about-image-wrapper .about-image{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: var(--border-radius-circle);
+}
+
+.about-section .about-details{
+    max-width: 50%;
 }
 
 .about-section .about-details .section-title{
@@ -306,7 +310,7 @@ header .navbar{
         color: var(--dark-color);
         font-size: var(--font-size-l);
     }
-
+    /* Hero Section */
     .hero-section .section-content{
         gap: 50px;
         flex-direction: column-reverse;
@@ -324,7 +328,23 @@ header .navbar{
     }
 
     .hero-section .hero-image-wrapper{
-        max-width: 270px;
+        max-width: 300px;
         margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .about-section .about-image-wrapper .about-image{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* About Us Section */
+
+    .about-section .section-content{
+        flex-direction: column;
+    }
+
+    .about-section .about-details{
+        max-width: 85%;
     }
 } 
