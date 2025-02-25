@@ -66,6 +66,22 @@ img{
     max-width: var(--site-max-width);
 }
 
+.section-title{
+    text-align: center;
+    padding: 60px 0 100px;
+    font-size: var(--font-size-xxxl);
+}
+
+.section-title::after{
+    content: "";
+    width: 85px;
+    height: 4px;
+    display: block;
+    margin: 5px auto 0;
+    background: var(--secondary-color);
+    border-radius: var(--border-radius-s);
+}
+
 /* Navbar Styling */
 
 header{
@@ -179,6 +195,58 @@ header .navbar{
     margin-right: 30px;
 }
 
+/* About Us */
+
+.about-section{
+    padding: 120px 0;
+    background: var(--light-pink-color);
+}
+
+.about-section .section-content{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.about-section .about-details{
+    max-width: 50%;
+}
+
+.about-section .about-details .section-title{
+    padding: 0;
+}
+
+.about-section .about-details .about-text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.about-section .about-details .social-link-list{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.about-section .about-details .social-link{
+    font-size: var(--font-size-xl);
+    color: var(--primary-color);
+    transition: 0.2s ease;
+}
+
+.about-section .about-details .social-link:hover{
+    color: var(--secondary-color);
+}
+
 /* Responsive media query */
 @media screen and (max-width: 900px){
 
@@ -242,7 +310,7 @@ header .navbar{
         color: var(--dark-color);
         font-size: var(--font-size-l);
     }
-
+    /* Hero Section */
     .hero-section .section-content{
         gap: 50px;
         flex-direction: column-reverse;
@@ -260,7 +328,23 @@ header .navbar{
     }
 
     .hero-section .hero-image-wrapper{
-        max-width: 270px;
+        max-width: 300px;
         margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .about-section .about-image-wrapper .about-image{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* About Us Section */
+
+    .about-section .section-content{
+        flex-direction: column;
+    }
+
+    .about-section .about-details{
+        max-width: 85%;
     }
 } 
