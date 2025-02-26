@@ -290,6 +290,37 @@ header .navbar{
     font-size: var(--font-size-m);
 }
 
+/* Testimonial Section */
+.testimonial-section{
+    padding: 40px 0 100px;
+    background: var(--light-pink-color);
+}
+
+.testimonial-section .testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+}
+
+.testimonial-section .testimonials .user-image{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: var(--border-radius-circle);
+}
+
+.testimonial-section .testimonials .user-name{
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+}
+
+.testimonial-section .testimonials .user-feedback{
+    line-height: 25px;
+}
+
 /* Responsive media query */
 @media screen and (max-width: 1024px){
 
