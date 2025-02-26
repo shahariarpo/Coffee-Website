@@ -106,7 +106,8 @@ header .navbar{
 .navbar .nav-logo .logo-text{
     color: var(--white-color);
     font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-normal);
+    font-family: "Miniver";
 }
 
 .navbar .nav-menu .nav-link{
