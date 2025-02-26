@@ -6,3 +6,20 @@ menuOpenButton.addEventListener("click", () => {
 });
 
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+
+
+// Initialize Swiper
+
+const swiper = new Swiper('.slider-wrapper', {
+
+    // Pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

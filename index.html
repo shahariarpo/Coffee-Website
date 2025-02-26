@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Website</title>
     <!-- Linking Font Awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <!-- Linking Swiper CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
      <!-- Linking Local CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <!-- Nav Bar & Header -->
@@ -125,42 +125,49 @@
          <section class="testimonial-section">
             <h2 class="section-title">Testimonials</h2>
             <div class="section-content">
-                <div class="slider-container">
+                <div class="slider-container swiper">
                     <div class="slider-wrapper">
-                        <ul class="testimonial-list">
-                            <li class="testimonials">
-                                <img src="Assets/images/user-1.jpg" alt="User" class="user-image">
-                                <h3 class="user-name">Sarah Johnson</h3>
-                                <p class="user-feedback">"The best cappuccino I’ve ever had! I love the cozy vibe of this place."</p>
-                            </li>
-                            <li class="testimonials">
+                        <ul class="testimonial-list swiper-wrapper">
+                            <li class="testimonials swiper-slide">
                                 <img src="Assets/images/user-2.jpg" alt="User" class="user-image">
                                 <h3 class="user-name">James Smith</h3>
                                 <p class="user-feedback">"A perfect spot for a morning pick-me-up. The lattes are always spot on!"</p>
                             </li>
-                            <li class="testimonials">
+                            <li class="testimonials swiper-slide">
                                 <img src="Assets/images/user-3.jpg" alt="User" class="user-image">
                                 <h3 class="user-name">Ethan Brown</h3>
                                 <p class="user-feedback">"I love the atmosphere here! Great place to relax with a cup of tea or coffee."</p>
                             </li>
-                            <li class="testimonials">
+                            <li class="testimonials swiper-slide">
                                 <img src="Assets/images/user-4.jpg" alt="User" class="user-image">
                                 <h3 class="user-name">Ava Williams</h3>
                                 <p class="user-feedback">"The staff is always friendly, and the pastries are to die for. My go-to spot!"</p>
                             </li>
-                            <li class="testimonials">
+                            <li class="testimonials swiper-slide">
                                 <img src="Assets/images/user-5.jpg" alt="User" class="user-image">
                                 <h3 class="user-name">Sung Jin Park</h3>
                                 <p class="user-feedback">"Such a cozy coffee shop! Their espresso is unbeatable, and the ambiance is perfect for catching up with friends."</p>
                             </li>
+                            <li class="testimonials swiper-slide">
+                                <img src="Assets/images/user-1.jpg" alt="User" class="user-image">
+                                <h3 class="user-name">Sarah Johnson</h3>
+                                <p class="user-feedback">"The best cappuccino I’ve ever had! I love the cozy vibe of this place."</p>
+                            </li>
                         </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
          </section>
     </main>
 
-    <script src="script.js"></script>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
