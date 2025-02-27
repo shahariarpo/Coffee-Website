@@ -433,7 +433,7 @@ header .navbar{
     border: 1px solid var(--primary-color)
 }
 
-.contact-section .contact-form textarea{
+.contact-section .contact-form .text-feedback{
     height: 100px;
     padding: 12px;
     resize: vertical;
@@ -575,6 +575,18 @@ header .navbar{
 
     .menu-section .menu-list .menu-item .menu-image{
         max-width: 200px;
+    }
+
+    /* Contact Section */
+
+    .contact-section .section-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section .contact-form{
+        max-width: 100%;
     }
 }
 
