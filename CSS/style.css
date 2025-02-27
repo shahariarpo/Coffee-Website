@@ -42,6 +42,10 @@
 }
 
 /* Styling for whole site */
+html{
+    scroll-behavior: smooth;
+}
+
 ul{
     list-style: none;
 }
