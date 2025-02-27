@@ -12,9 +12,9 @@
     /* Colors */
   --white-color: #fff;
   --dark-color: #252525;
-  --primary-color: #3b141c;
-  --secondary-color: #f3961c;
-  --light-pink-color: #faf4f5;
+  --primary-color: #3E1F13;
+  --secondary-color: #D48D3A;
+  --light-beige-color: #F0E1C6;
   --medium-gray-color: #ccc;
 
   /* Font size */
@@ -200,7 +200,7 @@ header .navbar{
 
 .about-section{
     padding: 120px 0;
-    background: var(--light-pink-color);
+    background: var(--light-beige-color);
 }
 
 .about-section .section-content{
@@ -293,7 +293,7 @@ header .navbar{
 /* Testimonial Section */
 .testimonial-section{
     padding: 40px 0 100px;
-    background: var(--light-pink-color);
+    background: var(--light-beige-color);
 }
 
 .testimonial-section .testimonials{
@@ -371,6 +371,72 @@ header .navbar{
 .gallery-section .gallery-item:hover .gallery-image{
 
     transform: scale(1.1);
+}
+
+/* Contact Section */
+
+.contact-section{
+    padding: 30px 0 50px;
+    background-color: var(--light-beige-color);
+}
+
+.contact-section .section-content{
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-section .contact-info-list .contact-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-section .contact-info-list .contact-info i{
+    font-size: var(--font-size-m);
+}
+
+.contact-section .contact-form{
+    max-width: 50%;
+}
+
+.contact-section .contact-form .form-input{
+    width: 100%;
+    height: 50px;
+    padding: 0 12px;
+    outline: none;
+    margin-bottom: 16px;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius-s);
+    border: 1px solid var(--medium-gray-color);
+}
+
+.contact-section .contact-form .form-input:focus{
+    border-color: var(--secondary-color);
+}
+
+.contact-section .contact-form .submit-button{
+    padding: 10px 26px;
+    color: var(--white-color);
+    background: var(--primary-color);
+    font-size: var(--font-size-m);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.contact-section .contact-form .submit-button:hover{
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color)
+}
+
+.contact-section .contact-form .text-feedback{
+    height: 100px;
+    padding: 12px;
+    resize: vertical;
 }
 
 /* Responsive media query */
@@ -509,6 +575,18 @@ header .navbar{
 
     .menu-section .menu-list .menu-item .menu-image{
         max-width: 200px;
+    }
+
+    /* Contact Section */
+
+    .contact-section .section-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section .contact-form{
+        max-width: 100%;
     }
 }
 
