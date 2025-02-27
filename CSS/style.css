@@ -42,6 +42,30 @@
 }
 
 /* Styling for whole site */
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track{
+    background: var(--primary-color);
+    border-radius: var(--border-radius-s);
+    margin-block: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: var(--border-radius-s);
+    background: var(--light-beige-color);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--secondary-color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 ul{
     list-style: none;
 }
@@ -297,6 +321,7 @@ header .navbar{
 }
 
 .testimonial-section .testimonials{
+    user-select: none;
     display: flex;
     flex-direction: column;
     align-items: center;
